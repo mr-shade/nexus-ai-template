@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Cpu, Zap, Shield, Globe, BarChart3 } from 'lucide-react';
+import { Cpu, Zap, Shield, Globe, BarChart3, Layers } from 'lucide-react';
 
 const features = [
   {
@@ -33,6 +33,12 @@ const features = [
     description: 'Deep insights into your operations with predictive performance modeling.',
     icon: BarChart3,
     color: 'bg-red-100 dark:bg-red-900/30',
+  },
+  {
+    title: 'Custom Workflows',
+    description: 'Build specialized agents for your unique business logic with our flexible SDK.',
+    icon: Layers,
+    color: 'bg-orange-100 dark:bg-orange-900/30',
   },
 ];
 
