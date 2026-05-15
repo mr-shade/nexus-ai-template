@@ -5,7 +5,7 @@ import { ArrowRight, Github } from 'lucide-react';
 
 export default function Hero() {
   const buttonClass =
-    'group relative border border-black bg-transparent px-8 py-3 font-mono text-sm font-bold uppercase text-blue-700 transition-[transform,box-shadow,background-color,color] duration-150 ease-out hover:bg-blue-700 hover:text-white hover:translate-y-[1px] hover:translate-x-[1px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-0 active:translate-y-0 active:shadow-none cursor-pointer flex items-center gap-2';
+    'group relative border border-border bg-transparent px-8 py-3 font-mono text-sm font-bold uppercase text-blue-700 transition-[transform,box-shadow,background-color,color] duration-150 ease-out hover:bg-blue-700 hover:text-white hover:translate-y-[1px] hover:translate-x-[1px] hover:shadow-[4px_4px_0px_0px_var(--border)] active:translate-x-0 active:translate-y-0 active:shadow-none cursor-pointer flex items-center gap-2';
 
   return (
     <section
@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-background/50 pointer-events-none" />
       
       <div className="relative z-10 flex flex-col items-center text-center max-w-5xl">
-        <div className="mb-6 inline-block border border-black bg-yellow-400 px-4 py-1 font-mono text-xs font-bold uppercase tracking-widest text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+        <div className="mb-6 inline-block border border-border bg-yellow-400 px-4 py-1 font-mono text-xs font-bold uppercase tracking-widest text-black shadow-[2px_2px_0px_0px_var(--border)]">
           v2.0 — Now with Autonomous Agents
         </div>
         
@@ -42,8 +42,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="mt-24 w-full max-w-6xl border border-black bg-white shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] p-2">
-        <div className="bg-slate-100 border border-black aspect-video flex items-center justify-center text-slate-400 font-mono italic">
+      <div className="mt-24 w-full max-w-6xl border border-border bg-background shadow-[12px_12px_0px_0px_var(--border)] p-2">
+        <div className="bg-secondary border border-border aspect-video flex items-center justify-center text-ink-soft font-mono italic">
           [ Dashboard Preview Image ]
         </div>
       </div>

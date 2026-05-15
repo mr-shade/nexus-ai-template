@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ModeToggle } from '@/components/mode-toggle';
 
 export default function Navbar() {
   return (
@@ -19,9 +20,12 @@ export default function Navbar() {
           <Link href="#docs" className="hover:text-blue-700 transition-colors">Documentation</Link>
         </div>
 
-        <button className="border border-black bg-blue-700 px-6 py-2 font-mono text-xs font-bold uppercase text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[1px] hover:translate-x-[1px] hover:shadow-none transition-all">
-          Launch App
-        </button>
+        <div className="flex items-center gap-4">
+          <ModeToggle />
+          <button className="border border-black dark:border-white bg-blue-700 px-6 py-2 font-mono text-xs font-bold uppercase text-white shadow-[4px_4px_0px_0px_var(--border)] hover:translate-y-[1px] hover:translate-x-[1px] hover:shadow-none transition-all">
+            Launch App
+          </button>
+        </div>
       </div>
     </nav>
   );

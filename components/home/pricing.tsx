@@ -32,7 +32,7 @@ const tiers = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 px-6 border-t border-black bg-slate-50">
+    <section id="pricing" className="py-24 px-6 border-t border-border bg-secondary/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-mono text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-4">
@@ -47,7 +47,7 @@ export default function Pricing() {
           {tiers.map((tier, index) => (
             <div 
               key={index} 
-              className={`border border-black p-8 flex flex-col ${tier.highlight ? 'bg-blue-700 text-white shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] scale-105' : 'bg-white text-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]'}`}
+              className={`border border-border p-8 flex flex-col ${tier.highlight ? 'bg-blue-700 text-white shadow-[12px_12px_0px_0px_var(--border)] scale-105' : 'bg-background text-foreground shadow-[8px_8px_0px_0px_var(--border)]'}`}
             >
               <h3 className="font-mono text-2xl font-bold uppercase mb-2">{tier.name}</h3>
               <div className="flex items-baseline gap-1 mb-4">
@@ -67,7 +67,7 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <button className={`w-full py-3 font-mono text-sm font-bold uppercase border border-black transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none ${tier.highlight ? 'bg-white text-blue-700' : 'bg-blue-700 text-white'}`}>
+              <button className={`w-full py-3 font-mono text-sm font-bold uppercase border border-border transition-all shadow-[4px_4px_0px_0px_var(--border)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none ${tier.highlight ? 'bg-white text-blue-700' : 'bg-blue-700 text-white'}`}>
                 {tier.cta}
               </button>
             </div>
