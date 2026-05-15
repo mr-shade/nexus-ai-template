@@ -4,9 +4,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   experimental: {
     // Tree-shake barrel imports
-    optimizePackageImports: [
-      'lucide-react',
-    ],
+    optimizePackageImports: ['lucide-react'],
   },
   images: {
     unoptimized: true, // Required for static export

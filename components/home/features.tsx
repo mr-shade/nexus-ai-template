@@ -45,14 +45,19 @@ export default function Features() {
             Built for <span className="text-blue-700">Scale</span>
           </h2>
           <p className="font-mono text-sm uppercase font-bold text-ink-soft">
-            // Powerful tools for the next generation of builders
+            {'// Powerful tools for the next generation of builders'}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border shadow-[12px_12px_0px_0px_var(--border)]">
           {features.map((feature, index) => (
-            <div key={index} className="bg-background p-8 group hover:bg-secondary/50 transition-colors">
-              <div className={`w-12 h-12 ${feature.color} border border-border flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_var(--border)] group-hover:translate-x-[2px] group-hover:translate-y-[2px] group-hover:shadow-none transition-all`}>
+            <div
+              key={index}
+              className="bg-background p-8 group hover:bg-secondary/50 transition-colors"
+            >
+              <div
+                className={`w-12 h-12 ${feature.color} border border-border flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_var(--border)] group-hover:translate-x-[2px] group-hover:translate-y-[2px] group-hover:shadow-none transition-all`}
+              >
                 <feature.icon className="w-6 h-6 text-foreground" />
               </div>
               <h3 className="font-mono text-xl font-bold uppercase mb-2">{feature.title}</h3>

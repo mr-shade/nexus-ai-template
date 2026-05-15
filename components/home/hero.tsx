@@ -17,19 +17,20 @@ export default function Hero() {
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-background/50 pointer-events-none" />
-      
+
       <div className="relative z-10 flex flex-col items-center text-center max-w-5xl">
         <div className="mb-6 inline-block border border-border bg-yellow-400 px-4 py-1 font-mono text-xs font-bold uppercase tracking-widest text-black shadow-[2px_2px_0px_0px_var(--border)]">
           v2.0 — Now with Autonomous Agents
         </div>
-        
+
         <h1 className="mb-8 font-mono text-6xl font-bold uppercase leading-[0.9] tracking-tighter md:text-8xl lg:text-9xl selection:bg-blue-700 selection:text-white">
           Enterprise <br />
           <span className="text-blue-700">Intelligence</span>
         </h1>
-        
+
         <p className="mb-12 max-w-2xl font-mono text-lg md:text-xl text-ink-soft uppercase leading-tight font-medium">
-          Nexus AI integrates seamlessly with your workflow to provide autonomous insights, predictive analytics, and real-time collaboration.
+          Nexus AI integrates seamlessly with your workflow to provide autonomous insights,
+          predictive analytics, and real-time collaboration.
         </p>
 
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">

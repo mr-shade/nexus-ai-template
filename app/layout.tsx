@@ -17,7 +17,8 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: 'Nexus AI | Enterprise Intelligence',
-  description: 'The Intelligent Operating System for Modern Teams. Automate the mundane and focus on the exceptional with Nexus AI.',
+  description:
+    'The Intelligent Operating System for Modern Teams. Automate the mundane and focus on the exceptional with Nexus AI.',
   applicationName: 'Nexus AI',
   keywords: ['AI', 'enterprise', 'intelligence', 'automation', 'nexus'],
   viewport: 'width=device-width, initial-scale=1',

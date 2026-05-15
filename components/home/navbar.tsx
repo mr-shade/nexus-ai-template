@@ -13,11 +13,17 @@ export default function Navbar() {
           <Image src="/logo.svg" alt="Nexus AI" width={32} height={32} />
           <span className="font-mono text-xl font-bold uppercase tracking-tighter">Nexus AI</span>
         </Link>
-        
+
         <div className="hidden md:flex items-center gap-8 font-mono text-xs font-bold uppercase">
-          <Link href="#features" className="hover:text-blue-700 transition-colors">Features</Link>
-          <Link href="#pricing" className="hover:text-blue-700 transition-colors">Pricing</Link>
-          <Link href="#docs" className="hover:text-blue-700 transition-colors">Documentation</Link>
+          <Link href="#features" className="hover:text-blue-700 transition-colors">
+            Features
+          </Link>
+          <Link href="#pricing" className="hover:text-blue-700 transition-colors">
+            Pricing
+          </Link>
+          <Link href="#docs" className="hover:text-blue-700 transition-colors">
+            Documentation
+          </Link>
         </div>
 
         <div className="flex items-center gap-4">

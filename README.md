@@ -44,6 +44,7 @@ npm run build
 ## Deployment
 
 This is a static frontend project and can be deployed to:
+
 - Vercel (recommended)
 - Netlify
 - Cloudflare Pages
@@ -56,5 +57,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Notice
 
 This project contains modified portions of MIT-licensed open-source software. Original copyright notices and license terms are preserved where required. All branding, assets, copywriting, and product identity have been substantially modified.
+
 # nexus-ai-template
+
 # nexus-ai-template

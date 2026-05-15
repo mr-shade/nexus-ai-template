@@ -13,9 +13,7 @@ export function ModeToggle() {
   }, []);
 
   if (!mounted) {
-    return (
-      <div className="w-10 h-10 border border-border bg-background" />
-    );
+    return <div className="w-10 h-10 border border-border bg-background" />;
   }
 
   return (
